@@ -1,7 +1,7 @@
 {
-  "name": "@zeus/vue-model-manager",
+  "name": "@telcomdataperu/zeus-vue-model-manager",
   "version": "1.0.0",
-  "description": "Vue 3 Model Manager for Microfrontends with OpenUI5-style API",
+  "description": "Vue 3 Model Manager for Microfrontends with OpenUI5-style API - Part of ZEUS Platform by TelcomdataPeru",
   "type": "module",
   "main": "dist/index.umd.js",
   "module": "dist/index.esm.js",
@@ -39,10 +39,20 @@
     "reactive",
     "state-management",
     "typescript",
-    "enterprise"
+    "enterprise",
+    "zeus",
+    "telcomdataperu"
   ],
-  "author": "Zeus Team",
+  "author": "José David Villanueva Villalobos <jdvillanuevavillalobos@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jdvillanuevavillalobos/vue-model-manager"
+  },
+  "bugs": {
+    "url": "https://github.com/jdvillanuevavillalobos/vue-model-manager/issues"
+  },
+  "homepage": "https://github.com/jdvillanuevavillalobos/vue-model-manager#readme",
   "peerDependencies": {
     "vue": "^3.0.0"
   },

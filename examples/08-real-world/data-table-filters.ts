@@ -48,7 +48,7 @@ try {
   console.log('      Search:', table.filters.search)
 
   console.log('\n   📋 Filtered data rows:')
-  filteredData.forEach(row => {
+  filteredData.forEach((row: any) => {
     console.log(`      - ${row.name} (${row.department} | ${row.status})`)
   })
 
@@ -65,7 +65,7 @@ try {
     return depOk && statusOk && searchOk
   })
 
-  newFiltered.forEach(row => {
+  newFiltered.forEach((row: any) => {
     console.log(`      - ${row.name} (${row.department} | ${row.status})`)
   })
 

@@ -36,13 +36,14 @@ try {
 
   // 4. Definir propiedades computadas derivadas
   const isPrivileged = computed(() => user.permissions.isAdmin || user.permissions.canDelete)
-  const userInitials = computed(() =>
-    user.profile.name
-      .split(' ')
-      .map(p => p[0])
-      .join('')
-      .toUpperCase()
-  )
+const userInitials = computed(() =>
+  user.profile.name
+    .split(' ')
+    .map((p: string) => p[0])
+    .join('')
+    .toUpperCase()
+)
+
   const loginMessage = computed(() =>
     `Bienvenido ${user.profile.name}, iniciaste sesión ${user.activity.loginCount} veces`
   )

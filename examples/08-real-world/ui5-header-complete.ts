@@ -61,7 +61,7 @@ try {
 
   // 4. Simular interacción con notificaciones
   const markAllRead = () => {
-    notifications.items.forEach(n => (n.read = true))
+    notifications.items.forEach((n: any)=> (n.read = true))
     notifications.inbox.unreadCount = 0
     console.log('📭 All notifications marked as read')
   }

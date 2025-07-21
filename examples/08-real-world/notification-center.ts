@@ -35,9 +35,10 @@ try {
   // 4. Computed-like logic: unread notifications
   const unreadItems = notifications.items.filter((n: any) => !n.read)
   console.log('📬 Unread notifications:')
-  unreadItems.forEach(n => {
-    console.log(`   • [${n.type.toUpperCase()}] ${n.title}`)
-  })
+unreadItems.forEach((n: any) => {
+  console.log(`   • [${n.type.toUpperCase()}] ${n.title}`);
+});
+
 
   // 5. Mark notification as read
   const markAsRead = (id: number) => {
@@ -55,7 +56,7 @@ try {
 
   console.log('\n📬 Updated unread notifications:')
   const updatedUnread = notifications.items.filter((n: any) => !n.read)
-  updatedUnread.forEach(n => {
+  updatedUnread.forEach((n: any) => {
     console.log(`   • [${n.type.toUpperCase()}] ${n.title}`)
   })
 

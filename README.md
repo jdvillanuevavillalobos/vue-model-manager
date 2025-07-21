@@ -77,7 +77,7 @@ npm install ../zeus-vue-model-manager
 ### 📦 **Opción 2: Instalación desde NPM (Producción)**
 
 ```bash
-npm install @zeus/vue-model-manager
+npm install @telcomdataperu/zeus-vue-model-manager
 ```
 
 ### 🔧 **Configuración en tu proyecto Vue**
@@ -113,7 +113,7 @@ app.mount('#app')
 #### **JsonModel - La base de todo**
 
 ```typescript
-import { JsonModel } from '@zeus/vue-model-manager'
+import { JsonModel } from '@telcomdataperu/zeus-vue-model-manager'
 
 // Crear un modelo con datos anidados
 const userModel = new JsonModel({
@@ -826,9 +826,16 @@ Los modelos son thread-safe para lectura, pero las escrituras deben manejarse de
 ---
 
 <div align="center">
+## ✒️ Autor
 
-**Hecho con ❤️ por el equipo Zeus para la comunidad Vue + UI5**
-
-[⭐ Star en GitHub](https://github.com/zeus/vue-model-manager) • [📖 Documentación](https://docs.zeus.com/vue-model-manager) • [🚀 Demo Live](https://demo.zeus.com/vue-model-manager)
+**José David Villanueva Villalobos**  
+Creador de Zeus Platform  
+[LinkedIn](https://www.linkedin.com/in/jose-david-villanueva-villalobos-47283554/) • [GitHub](https://github.com/jdvillanuevavillalobos)
 
 </div>
+
+## ☕ Apóyame con una donación
+
+¿Te fue útil esta herramienta o librería? Puedes ayudarme a seguir creando soluciones open source con una donación:
+
+[![Donar con PayPal](https://img.shields.io/badge/Donar%20con%20PayPal-0070ba?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/jdvillanuevavillalob)
