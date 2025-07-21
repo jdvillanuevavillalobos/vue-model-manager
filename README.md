@@ -85,7 +85,7 @@ npm install @telcomdataperu/zeus-vue-model-manager
 ```typescript
 // main.ts o setup principal
 import { createApp } from 'vue'
-import { createModelManager, enableGlobalAuditing } from '@zeus/vue-model-manager'
+import { createModelManager, enableGlobalAuditing } from '@telcomdataperu/zeus-vue-model-manager'
 import App from './App.vue'
 
 const app = createApp(App)
@@ -160,7 +160,7 @@ userModel.updateArrayItem(
 #### **ModelManager - Gestión con scopes**
 
 ```typescript
-import { createModelManager } from '@zeus/vue-model-manager'
+import { createModelManager } from '@telcomdataperu/zeus-vue-model-manager'
 
 // Crear manager para tu microfrontend
 const manager = createModelManager('zeus-header')
@@ -217,7 +217,7 @@ console.log(user?.getProperty('/name'))    // "David Rodriguez"
 
 <script setup lang="ts">
 import { computed, onMounted, onUnmounted } from 'vue'
-import { createModelManager } from '@zeus/vue-model-manager'
+import { createModelManager } from '@telcomdataperu/zeus-vue-model-manager'
 
 // Crear manager para este componente
 const manager = createModelManager('zeus-header')
@@ -316,7 +316,7 @@ const notificationsManager = createModelManager('zeus-notifications', {
 #### **Acceso Cross-Microfrontend**
 
 ```typescript
-import { getModelFromMicrofrontend, shareModelBetweenMicrofrontends } from '@zeus/vue-model-manager'
+import { getModelFromMicrofrontend, shareModelBetweenMicrofrontends } from '@telcomdataperu/zeus-vue-model-manager'
 
 // Desde zeus-header, acceder a datos de zeus-users
 const userProfile = getModelFromMicrofrontend('zeus-header', 'zeus-users', 'profile')
@@ -419,7 +419,7 @@ stopWatcher()
 #### **Estadísticas en Tiempo Real**
 
 ```typescript
-import { getGlobalStatistics, GlobalRegistry } from '@zeus/vue-model-manager'
+import { getGlobalStatistics, GlobalRegistry } from '@telcomdataperu/zeus-vue-model-manager'
 
 // Estadísticas globales
 const stats = getGlobalStatistics()
@@ -495,7 +495,7 @@ const model = new JsonModel(data, {
 
 <script setup>
 import { computed, reactive } from 'vue'
-import { JsonModel } from '@zeus/vue-model-manager'
+import { JsonModel } from '@telcomdataperu/zeus-vue-model-manager'
 
 const formModel = new JsonModel({
   name: '',
@@ -562,7 +562,7 @@ const submitForm = () => {
 
 <script setup>
 import { computed, ref } from 'vue'
-import { JsonModel } from '@zeus/vue-model-manager'
+import { JsonModel } from '@telcomdataperu/zeus-vue-model-manager'
 
 const listModel = new JsonModel({
   users: [
@@ -645,7 +645,7 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   plugins: [vue()],
   optimizeDeps: {
-    include: ['@zeus/vue-model-manager']
+    include: ['@telcomdataperu/zeus-vue-model-manager']
   }
 })
 ```
@@ -657,7 +657,7 @@ export default defineConfig({
 module.exports = {
   resolve: {
     alias: {
-      '@zeus/vue-model-manager': path.resolve(__dirname, 'node_modules/@zeus/vue-model-manager')
+      '@telcomdataperu/zeus-vue-model-manager': path.resolve(__dirname, 'node_modules/@telcomdataperu/zeus-vue-model-manager')
     }
   }
 }
@@ -670,7 +670,7 @@ module.exports = {
 export default defineNuxtConfig({
   modules: [],
   build: {
-    transpile: ['@zeus/vue-model-manager']
+    transpile: ['@telcomdataperu/zeus-vue-model-manager']
   }
 })
 ```
