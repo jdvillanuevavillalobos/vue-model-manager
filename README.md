@@ -819,9 +819,7 @@ Los modelos son thread-safe para lectura, pero las escrituras deben manejarse de
 
 **¿Preguntas? ¿Problemas? ¿Ideas?**
 
-📧 Email: [david@zeus.com](mailto:david@zeus.com)  
-💬 Discord: [Zeus Community](https://discord.gg/zeus)  
-🐦 Twitter: [@ZeusVueModels](https://twitter.com/ZeusVueModels)
+📧 Email: [jdvillanuevavillalobos@gmail.com](mailto:jdvillanuevavillalobos@gmail.com)  
 
 ---
 
