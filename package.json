@@ -1,0 +1,60 @@
+{
+  "name": "@zeus/vue-model-manager",
+  "version": "1.0.0",
+  "description": "Vue 3 Model Manager for Microfrontends with OpenUI5-style API",
+  "type": "module",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.umd.js"
+    }
+  },
+  "scripts": {
+    "build": "vite build",
+    "build:tsc": "tsc",
+    "build:clean": "rimraf dist && vite build",
+    "build:watch": "vite build --watch",
+    "dev": "vite",
+    "dev:tsc": "tsc --watch",
+    "clean": "rimraf dist",
+    "test:dev": "tsx test/basic.test.ts",
+    "test": "vitest",
+    "preview": "vite preview",
+    "prepublishOnly": "npm run build:clean"
+  },
+  "keywords": [
+    "vue3",
+    "models",
+    "microfrontend",
+    "openui5",
+    "vue",
+    "ui5",
+    "reactive",
+    "state-management",
+    "typescript",
+    "enterprise"
+  ],
+  "author": "Zeus Team",
+  "license": "MIT",
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "rimraf": "^5.0.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.4.5",
+    "vite": "^7.0.5",
+    "vite-plugin-dts": "^4.5.4",
+    "vitest": "^1.0.0",
+    "vue": "^3.4.21",
+    "vue-tsc": "^1.8.0"
+  }
+}
